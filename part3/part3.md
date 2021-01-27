@@ -12,7 +12,7 @@ To fix this, I added conversions from strings to numbers (floats because the use
 
 # DevTools - Network Tab
 
-![network.png](network.png)
+![network.png](network_tab.png)
 
 #1. What is the name of the new json file?
 citylots.json
