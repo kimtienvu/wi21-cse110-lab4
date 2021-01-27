@@ -44,7 +44,8 @@ there will be an error (ReferenceError: i is not defined) because the variable "
 
 #10. What will happen at line 12 and why?
 
-There will be a ReferenceError: discountedPrice is not defined because the scope of discountedPrice is inside the for loop code block (not global).
+There will be an error because discountedPrice is a constant and we are trying to re-assign it's value. If we ignore the assignment error,
+there will also be a ReferenceError: discountedPrice is not defined because the scope of discountedPrice is inside the for loop code block (not global).
 
 #11. What will happen at line 13 and why?
 
@@ -61,23 +62,23 @@ However, if we assume that assignment was successful in replacing the previous v
 
 #A. Accessing the value of the name property in the student object
 
-`alert(student.name);`
+`student.name;`
 
 #B. Accessing the value of the Grad Year property in the student object
 
-`alert(student['Grad Year'])`
+`student['Grad Year'];`
 
 #C. Calling the function for the greeting property in the student object
 
-`student.greeting()`
+`student.greeting();`
 
 #D. Accessing the name property of the object in the Favorite Teacher property in student
 
-`alert(student['Favorite Teacher'].name)`
+`student['Favorite Teacher']['name'];`
 
 #E. Access the first index in the array of the courseLoad property of the student object
 
-`alert(student.courseLoad[0])`
+`student['courseLoad'][0];`
 
 ---
 
@@ -139,7 +140,7 @@ Output: `false` because `true` becomes `1` if converted to number form.
 
 #F. true === Boolean(2)
 
-Output: `true` because `Boolean(2)` evaluates to a boolean type and both `true` and `Boolean(2)` are boolean types.
+Output: `true` because `Boolean(2)` evaluates to `true` and both `true` and `Boolean(2)` are boolean types.
 
 #16. Explain the difference between the == and === operators.
 
@@ -165,7 +166,7 @@ Therefore the result is `[6,8,10]`.
 
 #21. What is the output of this code?
 
-The output is (each number is on a new line): `1, 4, 3, 2` because each console.log print statement goes on a new line. `1` will appear first because there is no timeout and it is the first console.log statement. Since `2` and `3` both have timeouts, these will have to wait until the timer expires to run, hence `4` will print. `3`'s timer will expire before `2`'s timer, therefore `3` will print next and lastly `2`.
+The output is (each number is on a new line): `1 4 3 2` because each console.log print statement goes on a new line. `1` will appear first because there is no timeout and it is the first console.log statement. Since `2` and `3` both have timeouts, these will have to wait until the timer expires to run, hence `4` will print. `3`'s timer will expire before `2`'s timer, therefore `3` will print next and lastly `2`.
 
 
 
